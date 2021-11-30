@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.header_logo {
+	width: 200px;
+}
+
+.nav__home, .nav__about{
+	font-weight: 500;
+	font-size: 24px;
+	color: #FF6060;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+}
+
+.nav__home:hover, .nav__about:hover{
+	text-decoration: underline;
+}
