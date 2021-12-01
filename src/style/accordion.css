@@ -1,0 +1,35 @@
+.accordion {
+	margin-bottom: 30px;
+	background: #F7F7F7;
+	border-radius: 5px;
+	max-width: 1023px;
+}
+
+.accordion__title{
+	background-color: #FF6060;
+	color: white;
+	height: 47px;
+	font-size: 24px;
+	font-weight: 500;
+	list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+	border-radius: 5px;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.accordion__arrow{
+	height: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.accordion__content{
+	font-weight: 400;
+	font-size: 24px;
+	color:  #FF6060;
+	line-height: 142.6%;
+	padding: 15px;
+}
