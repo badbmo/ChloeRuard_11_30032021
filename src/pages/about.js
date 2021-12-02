@@ -8,9 +8,6 @@ export default class About extends React.Component {
 	render() {
 		return (
 			<main className="about">
-				<h1 className="about__title">
-					Voici la page à propos
-				</h1>
 				<Banner src={Background} alt="Paysage de montagnes enneigées"/>
 				<Accordion title={titleFiability} content={contentFiability}/>
 				<Accordion title={titleRespect} content={contentRespect}/>
