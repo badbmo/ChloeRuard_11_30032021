@@ -1,0 +1,9 @@
+.rentalsList {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	grid-gap: 50px;
+	justify-items: center;
+	padding: 50px;
+	border-radius: 25px;
+	background-color: #F6F6F6;
+}
