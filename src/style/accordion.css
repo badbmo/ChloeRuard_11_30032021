@@ -33,3 +33,7 @@
 	line-height: 142.6%;
 	padding: 15px;
 }
+
+.accordion[open] .accordion__arrow{
+	transform: rotate(180deg);
+}
