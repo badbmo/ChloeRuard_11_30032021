@@ -1,0 +1,8 @@
+.accordion__container {
+	display: flex;
+	gap: 30px;
+}
+
+.accordion__container .accordion {
+	width: 50%;
+}
