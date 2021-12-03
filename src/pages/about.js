@@ -9,10 +9,10 @@ export default class About extends React.Component {
 		return (
 			<main className="about">
 				<Banner src={Background} alt="Paysage de montagnes enneigées"/>
-				<Accordion title={titleFiability} content={contentFiability}/>
-				<Accordion title={titleRespect} content={contentRespect}/>
-				<Accordion title={titleService} content={contentService}/>
-				<Accordion title={titleSecurity} content={contentSecurity}/>
+				<Accordion title={titleFiability} text={contentFiability}/>
+				<Accordion title={titleRespect} text={contentRespect}/>
+				<Accordion title={titleService} text={contentService}/>
+				<Accordion title={titleSecurity} text={contentSecurity}/>
 			</main>
 		);
 	}

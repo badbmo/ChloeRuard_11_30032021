@@ -1,8 +1,8 @@
 .accordion {
 	margin-bottom: 30px;
-	background: #F7F7F7;
 	border-radius: 5px;
 	max-width: 1023px;
+	min-width: 330px;
 }
 
 .accordion__title{
@@ -36,4 +36,8 @@
 
 .accordion[open] .accordion__arrow{
 	transform: rotate(180deg);
+}
+
+.accordion[open]{
+	background: #F7F7F7;
 }
