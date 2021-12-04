@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/rental.css";
-//import Tag from "../components/tag";
+import Tag from "../components/tag";
 import Loader from "../components/Loader";
 import Accordion from "../components/accordion";
 
@@ -37,7 +37,7 @@ export default class Rental extends React.Component {
 	render() {
 		const { data, isLoading, error } = this.state;
 		console.log(this.state.data);
-		const { equipments, description } = this.state.data;
+		const { equipments, description, tags } = this.state.data;
 
 		if (error) {
 			return <p>{error.message}</p>;
@@ -50,10 +50,8 @@ export default class Rental extends React.Component {
 					<Loader />
 				) : (
 					<div>
-						{/* {data.tags.map((tag)=>(
-					<Tag tag={tag}/>
-				))} */}
 						{data.id}
+						<Tag tags={tags}/>
 						<div className="accordion__container">
 							<Accordion title="Equipements" list={equipments} />
 							<Accordion title="Description" text={description} />
