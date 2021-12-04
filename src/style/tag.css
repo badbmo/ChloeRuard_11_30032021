@@ -6,4 +6,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 5px;
+}
+
+.tag__container{
+	display: flex; 
+	gap: 20px;
 }
