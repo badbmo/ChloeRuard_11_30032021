@@ -24,7 +24,7 @@ export default class Accordion extends React.Component {
 			return(
 				<ul className="accordion__content">
 					{this.props.list.map((element)=>
-					<li>{element}</li>
+					<li key={element}>{element}</li>
 					)}
 				</ul>
 			)
