@@ -47,7 +47,6 @@ export default class Rental extends React.Component {
 
 	render() {
 		const {isLoading, error } = this.state;
-		console.log(this.state.data);
 		const { pictures, title, host, rating, location, tags, equipments, description } = this.state.data;
 
 		if (error) {
