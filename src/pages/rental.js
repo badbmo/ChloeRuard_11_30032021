@@ -3,6 +3,7 @@ import "../style/rental.css";
 import Tag from "../components/tag";
 import Loader from "../components/Loader";
 import Accordion from "../components/accordion";
+import Host from "../components/Host";
 
 export default class Rental extends React.Component {
 	constructor(props) {
@@ -37,7 +38,7 @@ export default class Rental extends React.Component {
 	render() {
 		const { data, isLoading, error } = this.state;
 		console.log(this.state.data);
-		const { equipments, description, tags } = this.state.data;
+		const { title, host, location, equipments, description, tags } = this.state.data;
 
 		if (error) {
 			return <p>{error.message}</p>;
@@ -45,13 +46,21 @@ export default class Rental extends React.Component {
 
 		return (
 			<main className="rental">
-				<h1 className="rental__title">Voici la page locations</h1>
 				{isLoading ? (
 					<Loader />
 				) : (
 					<div>
 						{data.id}
+						<div className="info__container">
+						<h1>{title}</h1>
+						<p>{location}</p>
 						<Tag tags={tags}/>
+						</div>
+
+						<div className="host__container">
+							<Host host={host}/>
+						</div>
+
 						<div className="accordion__container">
 							<Accordion title="Equipements" list={equipments} />
 							<Accordion title="Description" text={description} />
