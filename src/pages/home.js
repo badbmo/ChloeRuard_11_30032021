@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/home.css"
-import Banner from "../components/banner";
+import Banner from "../components/Banner";
 import Background from "../assets/home_banner.png";
 import Loader from "../components/Loader";
 import RentalsList from "../components/RentalsList";

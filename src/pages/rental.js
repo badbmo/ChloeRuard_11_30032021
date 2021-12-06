@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/rental.css";
-import Tag from "../components/tag";
+import Tag from "../components/Tag";
 import Loader from "../components/Loader";
-import Accordion from "../components/accordion";
+import Accordion from "../components/Accordion";
 import Host from "../components/Host";
 import Rating from "../components/Rating";
 import Carousel from "../components/Carousel";

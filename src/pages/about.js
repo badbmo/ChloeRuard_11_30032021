@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/about.css"
-import Banner from "../components/banner";
+import Banner from "../components/Banner";
 import Background from "../assets/about_banner.png"
-import Accordion from "../components/accordion";
+import Accordion from "../components/Accordion";
 
 export default class About extends React.Component {
 	render() {
