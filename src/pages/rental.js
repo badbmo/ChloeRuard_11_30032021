@@ -4,6 +4,7 @@ import Tag from "../components/tag";
 import Loader from "../components/Loader";
 import Accordion from "../components/accordion";
 import Host from "../components/Host";
+import Rating from "../components/Rating";
 
 export default class Rental extends React.Component {
 	constructor(props) {
@@ -38,7 +39,7 @@ export default class Rental extends React.Component {
 	render() {
 		const { data, isLoading, error } = this.state;
 		console.log(this.state.data);
-		const { title, host, location, equipments, description, tags } = this.state.data;
+		const { title, host, rating, location, equipments, description, tags } = this.state.data;
 
 		if (error) {
 			return <p>{error.message}</p>;
@@ -59,6 +60,7 @@ export default class Rental extends React.Component {
 
 						<div className="host__container">
 							<Host host={host}/>
+							<Rating rating={rating}/>
 						</div>
 
 						<div className="accordion__container">
