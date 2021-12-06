@@ -11,7 +11,7 @@ export default class Host extends React.Component {
 			</article>
 		)}else{
 			return(
-				<article classNae="host"></article>
+				<article className="host"></article>
 			)
 		};
 	}
