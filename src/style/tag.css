@@ -2,14 +2,15 @@
 	background-color:#FF6060;
 	color: white;
 	border-radius: 10px;
-	max-width: 115px;
+	min-width: 115px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 5px;
+	padding: 5px 20px;
 }
 
 .tag__container{
 	display: flex; 
 	gap: 20px;
+	margin-top: 20px;
 }

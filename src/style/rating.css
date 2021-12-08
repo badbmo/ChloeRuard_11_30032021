@@ -1,5 +1,6 @@
 .rating{
 	display: flex; 
 	flex-wrap: nowrap;
-gap: 10px;
+	gap: 10px;
+	margin-top: 20px;
 }

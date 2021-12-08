@@ -2,6 +2,7 @@
 	display: flex; 
 	flex-direction: row;
 	align-items: center;
+	justify-content: flex-end;
 	gap: 10px;
 }
 
@@ -14,4 +15,5 @@
 	color: #FF6060;
 	font-weight: 500;
 	font-size: 18px;
+	line-height: 24px;
 }

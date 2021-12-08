@@ -1,24 +1,31 @@
-.error{
-	display: flex; 
+.error {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.error__title{
-	color: #FF6060;
+.error__title {
+	color: #ff6060;
 	font-weight: 700;
 	font-size: 280px;
+	line-height: 411px;
 }
 
-.error__info{
-	color: #FF6060;
+.error__info {
+	color: #ff6060;
 	font-weight: 500;
 	font-size: 36px;
+	line-height: 50px;
 }
 
-.error__link{
-	color: #FF6060;
+.error__link {
+	color: #ff6060;
 	font-weight: 500;
 	font-size: 18px;
+	margin-top: 130px;
+}
+
+.error__link:hover {
+	text-decoration: underline;
 }

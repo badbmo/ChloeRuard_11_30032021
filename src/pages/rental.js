@@ -20,18 +20,17 @@ export default class Rental extends React.Component {
 
 	componentDidMount() {
 		this.setState({ isLoading: true });
-		const { id } = this.props.match.params
+		const { id } = this.props.match.params;
 		fetch("../data.json")
-		.then((response) => response.json())
-		.then((result) =>
-			this.setState({
-				data: result.find((location) => location.id === id),
-				isLoading: false,
-			})
-		)
-		.catch((error) => this.setState({ error, isLoading: false }));
-}
-	
+			.then((response) => response.json())
+			.then((result) =>
+				this.setState({
+					data: result.find((location) => location.id === id),
+					isLoading: false,
+				})
+			)
+			.catch((error) => this.setState({ error, isLoading: false }));
+	}
 
 	render() {
 		const { isLoading, error } = this.state;
@@ -49,18 +48,20 @@ export default class Rental extends React.Component {
 					<div>
 						<Carousel pictures={pictures} title={title} />
 
-						<div className="info__container">
-							<h1>{title}</h1>
-							<p>{location}</p>
-							<Tag tags={tags} />
-						</div>
+						<section className="info__container">
+							<div className="rental__container">
+								<h1 className="rental__title">{title}</h1>
+								<p className="rental__location">{location}</p>
+								<Tag tags={tags} />
+							</div>
 
-						<div className="host__container">
-							<Host host={host} />
-							<Rating rating={rating} />
-						</div>
+							<div className="host__container">
+								<Host host={host} />
+								<Rating rating={rating} />
+							</div>
+						</section>
 
-						<div className="accordion__container">
+						<div className="rentalContent__container">
 							<Accordion title="Equipements" list={equipments} />
 							<Accordion title="Description" text={description} />
 						</div>

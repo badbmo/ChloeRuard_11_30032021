@@ -1,13 +1,14 @@
-.banner{
-border-radius: 25px;
-overflow: hidden;
-height: 220px;
-margin-top: 30px;
-margin-bottom: 30px;
+.banner {
+	border-radius: 25px;
+	overflow: hidden;
+	height: 220px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-.banner__background{
+.banner__background {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	filter: brightness(70%);
 }

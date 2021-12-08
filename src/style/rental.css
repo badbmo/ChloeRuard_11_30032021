@@ -1,8 +1,29 @@
-.accordion__container {
+.rentalContent__container {
 	display: flex;
 	gap: 30px;
 }
 
-.accordion__container .accordion {
+.rentalContent__container .accordion {
 	width: 50%;
+}
+
+.info__container{
+	display: flex; 
+	justify-content: space-between;
+	margin: 30px 0;
+	flex-wrap: wrap;
+}
+
+.rental__title{
+font-weight: 500;
+font-size: 36px;
+line-height: 52px;
+color: #FF6060;
+}
+
+.rental__location{
+	font-weight: 500;
+	font-size: 18px;
+	color: #FF6060;
+	line-height: 24px;
 }

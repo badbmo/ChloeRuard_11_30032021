@@ -36,10 +36,12 @@ export default class Home extends React.Component {
 
 		return (
 			<main className="home">
-				<h1 className="home__title">
-					Chez vous, partout et ailleurs
-				</h1>
-				<Banner src={Background} alt="paysage de montagnes avec forêt"/>
+				<div className="hero">
+					<h1 className="hero__title">
+						Chez vous, partout et ailleurs
+					</h1>
+					<Banner src={Background} alt="paysage de montagnes avec forêt"/>
+				</div>
 
 				{isLoading ? (
           <Loader/>
