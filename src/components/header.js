@@ -11,10 +11,10 @@ export default class Header extends React.Component {
 					<img className="header__logo" src={Logo} alt="logo de Kasa" />
 				</Link>
 				<nav className="header__nav">
-					<NavLink className="nav__home" to="/">
+					<NavLink exact className="nav__home" activeClassName="nav__home-active" to="/">
 						Accueil
 					</NavLink>
-					<NavLink className="nav__about" to="/about">
+					<NavLink exact className="nav__about" activeClassName="nav__home-active" to="/about">
 						A Propos
 					</NavLink>
 				</nav>
