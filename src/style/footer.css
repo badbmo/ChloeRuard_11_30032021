@@ -1,16 +1,25 @@
-.footer{
+.footer {
 	background-color: black;
-	padding: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 50px;
+	margin-top: 2rem;
+	gap: 2.5rem;
+	padding: 3.75rem;
 }
 
-.footer__copyright{
+.footer__copyright {
 	color: white;
+	text-align: center;
 	font-weight: 500;
-	font-size: 24px;
-	margin-top: 40px;
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.footer__copyright {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
 }

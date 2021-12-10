@@ -14,34 +14,39 @@
 
 @media screen and (min-width: 768px) {
 	.header__logo {
-    height: 4.25rem;
-  }
+		height: 4.25rem;
+	}
 }
 
-.header__nav{
-	display: flex; 
+.header__nav {
+	display: flex;
 	flex-wrap: nowrap;
 	gap: 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
 	.header__nav {
-  	gap: 3.5rem;
-  }
+		gap: 3.5rem;
+	}
 }
 
-.nav__home, .nav__about{
+.nav__home,
+.nav__about {
 	font-weight: 500;
 	font-size: 0.75rem;
-	color: #FF6060;
+	color: #ff6060;
 }
 
 @media screen and (min-width: 768px) {
-	.nav__home, .nav__about {
-  	font-size: 1.5rem;
-  }
+	.nav__home,
+	.nav__about {
+		font-size: 1.5rem;
+	}
 }
 
-.nav__home:hover, .nav__about:hover, .nav__home-active, .nav__about-active{
+.nav__home:hover,
+.nav__about:hover,
+.nav__home-active,
+.nav__about-active {
 	text-decoration: underline;
 }
