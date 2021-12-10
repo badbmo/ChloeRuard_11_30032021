@@ -1,12 +1,17 @@
 .thumb {
-	width: 340px;
-	height: 340px;
+	height: 255px;
 	overflow: hidden;
 	border-radius: 10px;
 	position: relative;
 }
 
-.thumb:hover{
+@media screen and (min-width: 768px) {
+	.thumb {
+		height: 340px;
+	}
+}
+
+.thumb:hover {
 	box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -17,7 +22,7 @@
 	filter: brightness(70%);
 }
 
-.thumb__cover:hover{
+.thumb__cover:hover {
 	filter: brightness(100%);
 }
 
@@ -26,7 +31,8 @@
 	z-index: 2;
 	color: white;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 1.125rem;
 	bottom: 1.25rem;
-  left: 1.25rem;
+	left: 1.25rem;
+	width: 90%;
 }

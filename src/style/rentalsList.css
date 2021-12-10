@@ -1,9 +1,15 @@
 .rentalsList {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-	grid-gap: 50px;
-	justify-items: center;
-	padding: 50px;
-	border-radius: 25px;
-	background-color: #F6F6F6;
+	grid-gap: 1.25rem;
+	/* justify-items: center; */
+}
+
+@media screen and (min-width: 768px) {
+	.rentalsList {
+		grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+		grid-gap: 3.125rem;
+		padding: 3.125rem;
+		border-radius: 25px;
+		background-color: #f6f6f6;
+	}
 }
