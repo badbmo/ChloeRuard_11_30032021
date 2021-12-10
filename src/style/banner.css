@@ -1,9 +1,16 @@
 .banner {
-	border-radius: 25px;
+	border-radius: 10px;
 	overflow: hidden;
-	height: 220px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	height: 7rem;
+	margin-bottom: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+	.banner {
+		border-radius: 25px;
+		height: 14rem;
+		margin-bottom: 2rem;
+	}
 }
 
 .banner__background {
@@ -11,4 +18,33 @@
 	height: 100%;
 	object-fit: cover;
 	filter: brightness(70%);
+}
+
+.hero {
+	position: relative;
+}
+
+.hero__title {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	color: white;
+	z-index: 2;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+	.hero__title {
+		font-size: 3rem;
+		line-height: 4.25rem;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		text-align: center;
+	}
 }
