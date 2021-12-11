@@ -3,6 +3,7 @@
 	border-radius: 5px;
 	max-width: 1023px;
 	width: -moz-available;
+	transition: all 0.15s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -33,6 +34,7 @@
 
 .accordion__arrow {
 	width: 1rem;
+	transition: transform 0.2s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -63,4 +65,19 @@
 
 .accordion[open] {
 	background: #f7f7f7;
+}
+
+.accordion[open] .accordion__content {
+	animation: animateDown 0.2s linear ;
+}
+
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
 }

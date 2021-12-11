@@ -3,6 +3,7 @@
 	overflow: hidden;
 	border-radius: 10px;
 	position: relative;
+	transition: all 0.1s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -20,6 +21,7 @@
 	height: 100%;
 	object-fit: cover;
 	filter: brightness(70%);
+	transition: all 0.1s ease;
 }
 
 .thumb__cover:hover {
