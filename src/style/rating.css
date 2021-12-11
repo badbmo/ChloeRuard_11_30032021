@@ -1,6 +1,22 @@
-.rating{
-	display: flex; 
+.rating {
+	display: flex;
 	flex-wrap: nowrap;
-	gap: 10px;
-	margin-top: 20px;
+	gap: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+	.rating {
+		gap: 0.5rem;
+		margin-top: 1.5rem;
+	}
+}
+
+.rating__star {
+	width: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.rating__star {
+		width: 2rem;
+	}
 }

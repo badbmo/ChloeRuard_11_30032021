@@ -1,19 +1,32 @@
-.host{
-	display: flex; 
+.host {
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-end;
-	gap: 10px;
+	gap: 0.5rem;
 }
 
-.host__picture{
+.host__picture {
 	border-radius: 100%;
-	max-width: 64px;
+	width: 2rem;
 }
 
-.host__name{
-	color: #FF6060;
+@media screen and (min-width: 768px) {
+	.host__picture {
+		width: 4rem;
+	}
+}
+
+.host__name {
+	color: #ff6060;
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+}
+
+@media screen and (min-width: 768px) {
+	.host__name {
+		font-size: 1.125rem;
+		line-height: 1.5rem;
+	}
 }
