@@ -9,9 +9,30 @@ export default class Carousel extends React.Component {
 		this.state = {
 			index: 0,
 		};
+	}
 
-		 this.nextImage = this.nextImage.bind(this)
-		 this.previousImage = this.previousImage.bind(this)
+	nextImage() {
+		const { index } = this.state;
+		const totalPictures = this.props.pictures.length;
+		this.setState({ index: index === totalPictures - 1 ? 0 : index + 1 });
+	}
+
+	previousImage() {
+		const { index } = this.state;
+		const totalPictures = this.props.pictures.length;
+		this.setState({ index: index === 0 ? totalPictures - 1 : index - 1 });
+	}
+
+	renderArrows() {
+		const totalPictures = this.props.pictures.length;
+		if (totalPictures > 1) {
+			return (
+				<div>
+					<img className="carousel__arrow-left" src={Arrow} alt="arrow previous" onClick={() => this.previousImage()} />
+					<img className="carousel__arrow-right" src={Arrow} alt="arrow next" onClick={() => this.nextImage()} />
+				</div>
+			);
+		}
 	}
 
 	render() {
@@ -22,51 +43,13 @@ export default class Carousel extends React.Component {
 				<section className="carousel">
 					<img src={this.props.pictures[index]} alt={this.props.title} className="carousel___image" />
 					<span className="carousel__page">
-						{index +1}/{totalPictures}
+						{index + 1}/{totalPictures}
 					</span>
-					{totalPictures > 1 ? (
-						<div>
-							<img className="carousel__arrow-left" src={Arrow} alt="arrow previous" onClick={this.previousImage} />
-							<img className="carousel__arrow-right" src={Arrow} alt="arrow next" onClick={this.nextImage} />
-						</div>
-					) : (
-						<div></div>
-					)}
-					{/* {this.renderArrows} */}
+					{this.renderArrows()}
 				</section>
 			);
 		} else {
 			return <section className="carousel"></section>;
 		}
-	}
-
-	// renderArrows() {
-	// 	const totalPictures = this.props.pictures.length;
-	// 	if (totalPictures > 1) {
-	// 		return (
-	// 			<div>
-	// 				<img className="carousel__arrow-left" src={Arrow} alt="arrow previous" onClick={this.previousImage()} />
-	// 				<img className="carousel__arrow-right" src={Arrow} alt="arrow next" onClick={this.previousImage()} />
-	// 			</div>
-	// 		);
-	// 	} else {
-	// 		return <div></div>;
-	// 	}
-	// }
-
-	nextImage() {
-		const { index } = this.state;
-		const totalPictures = this.props.pictures.length;
-		if (index === totalPictures -1) {
-			this.setState({ index: 0 });
-		} else {
-			this.setState({ index: index + 1 });
-		}
-	}
-
-	previousImage() {
-		const { index } = this.state;
-		const totalPictures = this.props.pictures.length;
-		this.setState({ index: index === 0 ? totalPictures - 1 : index - 1 });
 	}
 }
