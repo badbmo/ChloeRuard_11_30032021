@@ -36,7 +36,7 @@ export default class Home extends React.Component {
 		}
 
 		if (isLoading) {
-			<Loader />;
+			return <Loader />;
 		}
 
 		if (data === undefined) {

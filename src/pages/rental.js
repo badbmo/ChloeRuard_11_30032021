@@ -41,7 +41,7 @@ export default class Rental extends React.Component {
 		}
 
 		if (isLoading) {
-			<Loader />;
+			return <Loader />;
 		}
 
 		if (data === undefined) {
