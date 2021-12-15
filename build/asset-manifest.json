@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ChloeRuard_11_30032021/static/css/main.2eef3e93.chunk.css",
-    "main.js": "/ChloeRuard_11_30032021/static/js/main.564e4bf8.chunk.js",
-    "main.js.map": "/ChloeRuard_11_30032021/static/js/main.564e4bf8.chunk.js.map",
+    "main.js": "/ChloeRuard_11_30032021/static/js/main.0b01e638.chunk.js",
+    "main.js.map": "/ChloeRuard_11_30032021/static/js/main.0b01e638.chunk.js.map",
     "runtime-main.js": "/ChloeRuard_11_30032021/static/js/runtime-main.5085ed43.js",
     "runtime-main.js.map": "/ChloeRuard_11_30032021/static/js/runtime-main.5085ed43.js.map",
-    "static/js/2.2e5dd22c.chunk.js": "/ChloeRuard_11_30032021/static/js/2.2e5dd22c.chunk.js",
-    "static/js/2.2e5dd22c.chunk.js.map": "/ChloeRuard_11_30032021/static/js/2.2e5dd22c.chunk.js.map",
+    "static/js/2.6013a162.chunk.js": "/ChloeRuard_11_30032021/static/js/2.6013a162.chunk.js",
+    "static/js/2.6013a162.chunk.js.map": "/ChloeRuard_11_30032021/static/js/2.6013a162.chunk.js.map",
     "index.html": "/ChloeRuard_11_30032021/index.html",
     "static/css/main.2eef3e93.chunk.css.map": "/ChloeRuard_11_30032021/static/css/main.2eef3e93.chunk.css.map",
-    "static/js/2.2e5dd22c.chunk.js.LICENSE.txt": "/ChloeRuard_11_30032021/static/js/2.2e5dd22c.chunk.js.LICENSE.txt",
+    "static/js/2.6013a162.chunk.js.LICENSE.txt": "/ChloeRuard_11_30032021/static/js/2.6013a162.chunk.js.LICENSE.txt",
     "static/media/about_banner.cc7a05da.png": "/ChloeRuard_11_30032021/static/media/about_banner.cc7a05da.png",
     "static/media/arrow_icon.b052dd29.svg": "/ChloeRuard_11_30032021/static/media/arrow_icon.b052dd29.svg",
     "static/media/home_banner.024f945a.png": "/ChloeRuard_11_30032021/static/media/home_banner.024f945a.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5085ed43.js",
-    "static/js/2.2e5dd22c.chunk.js",
+    "static/js/2.6013a162.chunk.js",
     "static/css/main.2eef3e93.chunk.css",
-    "static/js/main.564e4bf8.chunk.js"
+    "static/js/main.0b01e638.chunk.js"
   ]
 }
